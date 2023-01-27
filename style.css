@@ -1,107 +1,117 @@
-:root{
-    --dark:rgb(42, 41, 41);
-    --darker:rgb(50, 49, 49);
-    --darkest:rgb(11, 11, 11);
-    --grey:grey;
-    --light:white;
-    --pink:rgb(246, 72, 101);
-    --purpal:rgb(145, 25, 145);
+:root {
+  --dark: rgb(42, 41, 41);
+  --darker: rgb(50, 49, 49);
+  --darkest: rgb(11, 11, 11);
+  --grey: grey;
+  --light: white;
+  --pink: rgb(246, 72, 101);
+  --purpal: rgb(145, 25, 145);
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: var(--dark);
-    color: rgb(146, 162, 177);
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--dark);
+  color: rgb(146, 162, 177);
 }
-header{
-    padding: 2rem 1rem;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
-#form{
-    display: flex;
+#form {
+  display: flex;
 }
-input, button{
-    border: none;
-    outline: none;
-    background: none;
+input,
+button {
+  border: none;
+  outline: none;
+  background: none;
 }
-#input{
-    flex:1 0%;
-    background-color:var(--darker);
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-right: 1rem;
-    color: var(--light);
+#input {
+  flex: 1 0%;
+  background-color: var(--darker);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: var(--light);
 }
-#submit{
-    color: var(--pink);
-    font-size: 20px;
-    font-weight: 700;
-    cursor: pointer;
-    background-image: linear-gradient(to right,var(--pink),var(--purpal));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: .5s;
+#submit {
+  color: var(--pink);
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  background-image: linear-gradient(to right, var(--pink), var(--purpal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s;
+  border-radius: 20px;
+  border: none;
+  margin-left: 10px;
+  border: 5px solid rgb(97, 95, 95);
 }
-button:hover{
-    opacity: .6;
+button:hover {
+  opacity: 0.6;
 }
-#main{
-    flex:1 0%;
-    padding: 2rem 1rem;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto; 
+#main {
+  flex: 1 0%;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
 /* #tasks{
     display: flex;
 } */
-#tasks .task{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--darkest);   
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkest);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
-.content{
-    flex: 1 1 0%;
+.content {
+  flex: 1 1 0%;
 }
-#tasks .content .text{
-    color: var(--light);
-    width: 100%;
+#tasks .content .text {
+  color: var(--light);
+  width: 100%;
 }
-#tasks .content .text:not(:read-only){
-    color: var(--pink);
+#tasks .content .text:not(:read-only) {
+  color: var(--pink);
 }
-#tasks .action{
-    display: flex;
+#tasks .action {
+  display: flex;
 }
-#tasks .action button{
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0 0.5rem;
+#tasks .action button {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0.5rem;
 }
-.action .edit{
-    background-image: linear-gradient(to right,var(--pink),var(--purpal));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.action .edit {
+  background-image: linear-gradient(to right, var(--pink), var(--purpal));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.action .del{
-    color: rgb(193, 25, 59);
+.action .del {
+  color: rgb(193, 25, 59);
 }
-
+.del,.edit{
+    border-radius: 20px;
+  border: none;
+  margin-left: 10px;
+  border: 2px solid rgb(97, 95, 95);
+}
